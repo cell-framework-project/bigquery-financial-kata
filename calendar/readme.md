@@ -30,8 +30,14 @@ FROM UNNEST(GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')) AS date ORDER BY da
   <tbody>
     <tr>
       <td>1970-01-01</td>
+    </tr>
+    <tr>
       <td>1970-01-02</td>
+    </tr>
+    <tr>
       <td>1970-01-03</td>
+    </tr>
+    <tr>
       <td>...</td>
     </tr>
   </tbody>
