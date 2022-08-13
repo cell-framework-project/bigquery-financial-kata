@@ -50,7 +50,7 @@ FROM UNNEST(GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')) AS date
 ROW_NUMBER() OVER(ORDER BY date) AS timestamp_days
 ```
 
-#### And lets take the year, month and date fields as integers <b>INT64</b> using EXTRACT :
+#### And lets take the year, month and date fields as integers using EXTRACT :
 
 ```sql
 EXTRACT(YEAR FROM date) AS year

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `cell-framework-project.a_g_automation.calendar` AS
+CREATE OR REPLACE TABLE `cell-framework-project.financial_kata.calendar` AS
 SELECT 
   ROW_NUMBER() OVER(ORDER BY date) AS timestamp_days, 
   date,
