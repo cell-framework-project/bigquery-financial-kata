@@ -68,7 +68,7 @@ EXTRACT(DAY FROM date) AS as day
 <table>
   <thead>
     <tr>
-      <th>1</th>
+      <th>timestamp_days</th>
       <th>date</th>
       <th>year</th>
       <th>month</th>
@@ -97,6 +97,10 @@ EXTRACT(DAY FROM date) AS as day
       <td>3</td>
     </tr>
     <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
       <td>...</td>
     </tr>
   </tbody>
