@@ -16,8 +16,9 @@ GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')
 
 ```sql
 SELECT 
-date 
-FROM UNNEST(GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')) AS date ORDER BY date;
+  date 
+FROM UNNEST(GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')) AS date 
+  ORDER BY date;
 ```
 
 ##### So now we have a table with a single date column:
@@ -62,4 +63,31 @@ EXTRACT(MONTH FROM date) AS as month
 ```sql
 EXTRACT(DAY FROM date) AS as day
 ```
+
+##### So now we have a table with a single date column:
+<table>
+  <thead>
+    <tr>
+      <th>1</th>
+      <th>date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1970-01-01</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1970-01-02</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1970-01-03</td>
+    </tr>
+    <tr>
+      <td>...</td>
+    </tr>
+  </tbody>
+<table>
 
