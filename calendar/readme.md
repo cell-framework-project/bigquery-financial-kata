@@ -64,26 +64,37 @@ EXTRACT(MONTH FROM date) AS as month
 EXTRACT(DAY FROM date) AS as day
 ```
 
-##### So now we have a table with a single date column:
+##### Now it looks like this:
 <table>
   <thead>
     <tr>
       <th>1</th>
       <th>date</th>
+      <th>year</th>
+      <th>month</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>1</td>
       <td>1970-01-01</td>
+      <td>1970</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>2</td>
       <td>1970-01-02</td>
+      <td>1970</td>
+      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>3</td>
       <td>1970-01-03</td>
+      <td>1970</td>
+      <td>1</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>...</td>
