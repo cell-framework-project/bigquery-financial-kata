@@ -72,6 +72,7 @@ EXTRACT(DAY FROM date) AS as day
       <th>date</th>
       <th>year</th>
       <th>month</th>
+      <th>day</th>
     </tr>
   </thead>
   <tbody>
