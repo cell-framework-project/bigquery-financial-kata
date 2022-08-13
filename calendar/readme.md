@@ -42,3 +42,24 @@ FROM UNNEST(GENERATE_DATE_ARRAY('1970-01-01', '2100-12-31')) AS date ORDER BY da
     </tr>
   </tbody>
 <table>
+
+#### Then we can add a sourrogate id but with some logic, so let's create a timestamp expresed in days from 1970-01-01 in ordinals
+
+```sql
+ROW_NUMBER() OVER(ORDER BY date) AS timestamp_days
+```
+
+#### And lets take the year, month and date fields as integers <b>INT64</b> using EXTRACT :
+
+```sql
+EXTRACT(YEAR FROM date) AS year
+```
+
+```sql
+EXTRACT(MONTH FROM date) AS as month
+```
+
+```sql
+EXTRACT(DAY FROM date) AS as day
+```
+
