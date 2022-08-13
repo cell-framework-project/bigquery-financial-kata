@@ -1,8 +1,9 @@
-CREATE OR REPLACE TABLE `cell-framework-project.financial_kata.calendar` AS
+CREATE OR REPLACE TABLE `financial_kata.calendar` AS
 SELECT 
   ROW_NUMBER() OVER(ORDER BY date) AS timestamp_days, 
   date,
   EXTRACT(YEAR FROM date) AS year,
+  EXTRACT(QUARTER FROM date) AS quarter,
   EXTRACT(MONTH FROM date) AS month,
   EXTRACT(DAY FROM date) AS day,  
   EXTRACT(DAYOFYEAR FROM date) AS year_day, 
